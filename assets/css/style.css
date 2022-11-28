@@ -8,22 +8,36 @@
     font-family: 'Russo One', sans-serif;
     
 }
-
+/* Add style to background image */
 body {
     background: url("../images/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+/* Add style to headings */
 header {
     font-size: 2rem;
     text-align: center;
     color: #FFE91F;
+;
 }
 
 h2, h3 {
     color: #FFE91F;
     text-align: center;
+}
+/* Adds style to scoreboard */
+.scorebox {
+    border: 1rem solid #FFE91F;
+    border-radius: 1rem;
+    color: #FFE91F;
+    background-color: #B534D2;
+    text-align: center;
+    width: 15rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 
