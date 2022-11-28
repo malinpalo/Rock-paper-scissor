@@ -16,7 +16,14 @@ body {
 }
 
 header {
+    font-size: 2rem;
     text-align: center;
     color: #FFE91F;
 }
+
+h2, h3 {
+    color: #FFE91F;
+    text-align: center;
+}
+
 
