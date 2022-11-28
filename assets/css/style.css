@@ -27,6 +27,13 @@ h2, h3 {
     color: #FFE91F;
     text-align: center;
 }
+/* Adds style to buttons */
+.btn {
+    margin: 2rem 1rem;
+    border: 1rem solid #333234;
+    border-radius: 1rem;
+    background-color: #FFE91F;
+}
 /* Adds style to scoreboard */
 .scorebox {
     border: 1rem solid #FFE91F;
