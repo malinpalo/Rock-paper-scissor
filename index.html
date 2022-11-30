@@ -22,21 +22,23 @@
   <section class="game-area">
     <h2>Best out of 5, the clock Is ticking!</h2>
         <h3>Choose a winning hand!</h3>
-    
+   
+    <!--Box with information of who won or lost each round-->
+    <div class="result-box">
+        <!--Information about who won and what the computer played, shows after each hand is being played-->
+        <div id="result-message"></div>
+        <!--Player and computers hand, shows after each hand is being played-->
+        <div id="roll-player">Player<span id="win">You won!</span></div>
+        <div id="roll-computer">Computer<span id="lost">You lost!</span></div>
+      </div>
+        
         <!--Buttons that are used to play the game-->
     <div>
         <button class="btn" data-type="0"><img src="assets/images/rock.png" alt="A rock made out of a hand"></button>
         <button class="btn" data-type="1"><img src="assets/images/scissors.png" alt="A scissor made out of a hand"></button>
         <button class="btn" data-type="2"><img src="assets/images/paper.png" alt="A paper made out of a hand"></button>
     </div>
-    
-    <!--Information about who won-->
-    <div id="results"></div>
 
-    <!--Player and computers hand-->
-    <div id="roll-player">Player</div>
-    <div id="roll-computer">Computer</div>
-    
     <!--Game score board-->
     <div class="scorebox">
         <p>Scoreboard!</p>
@@ -57,5 +59,5 @@
         </ul>
     </footer>
 
-    <script src="assets/css/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>

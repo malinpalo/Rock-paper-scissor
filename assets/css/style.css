@@ -27,6 +27,11 @@ h2, h3 {
     color: #FFE91F;
     text-align: center;
 }
+
+/* Adds style to result-box where as the result of each round is beeing declared*/
+.result-box {
+    color: #B534D2;
+}
 /* Adds style to buttons */
 .btn {
     margin: 2rem 1rem;
