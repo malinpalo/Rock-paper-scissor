@@ -33,7 +33,13 @@ h2, h3 {
     color: #B534D2;
 }
 /* Adds style to buttons */
-.btn {
+#buttons {
+    align-items: baseline;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.button {
     margin: 2rem 1rem;
     border: 1rem solid #333234;
     border-radius: 1rem;

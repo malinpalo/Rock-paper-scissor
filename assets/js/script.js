@@ -1,7 +1,8 @@
 /**
  *create game variables for manipulating the DOM
  */
- let buttons = document.getElementsByClassName('btn');
+ let buttons = document.getElementsByTagName('button');
+ let resultDisplay
  
 
 let r = document.getElementById('r');
@@ -17,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             let playerPlays = this.getAttribute('data-type');
             startGame(playerPlays);
+            computerPlaysRandom()
+
         });
        
     }
@@ -46,12 +49,13 @@ function startGame(playerPlays) {
     else if (playerPlays === computerPlays) {
         document.getElementById('result-message').innerHTML = "Oh,It's a draw!"
     }
+    resultDisplay = result;
 
 }
 
 function computerPlaysRandom() {
     let choices = ['rock', 'paper', 'scissors'];
-    let randomNumber = Math.floor(Math.random() * 5);
+    let randomNumber = (Math.floor(Math.random() * 3)+1);
     return choices[randomNumber]; 
 }
 
