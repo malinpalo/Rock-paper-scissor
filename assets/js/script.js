@@ -2,7 +2,7 @@
  *create game variables for manipulating the DOM
  */
  let buttons = document.getElementsByClassName('btn');
- let choices = ['rock', 'paper', 'scissors'];
+ 
 
 let r = document.getElementById('r');
 let p = document.getElementById('p');
@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }); 
 
-/**The Game, here is the possible results of the computers and plyers choises of hands */
+/**The Game, here is the possible results of the computers and plyers choises of play*/
 function startGame(playerPlays) {
-    let computerPlays = computerPlayRandom();
+    let computerPlays = computerPlaysRandom();
     if (playerPlays === 'rock' && computerPlays === 'paper') {
         document.getElementById('result-message').innerHTML = "Buu, You lose!"
     }
@@ -49,8 +49,10 @@ function startGame(playerPlays) {
 
 }
 
-function computerPlayRandom() {
-
+function computerPlaysRandom() {
+    let choices = ['rock', 'paper', 'scissors'];
+    let randomNumber = Math.floor(Math.random() * 5);
+    return choices[randomNumber]; 
 }
 
 function result() {
