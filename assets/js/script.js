@@ -1,8 +1,8 @@
 /**
  *create game variables for manipulating the DOM
  */
- let buttons = document.getElementsByTagName('button');
-
+ let buttons = document.getElementsByClassName('btn');
+ let choices = ['rock', 'paper', 'scissors'];
 
 let r = document.getElementById('r');
 let p = document.getElementById('p');
@@ -24,12 +24,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /**The Game, here is the possible results of the computers and plyers choises of hands */
 function startGame(playerPlays) {
-    let computerPlay = computersPlay
-    console.log(button)
+    let computerPlays = computerPlayRandom();
+    if (playerPlays === 'rock' && computerPlays === 'paper') {
+        document.getElementById('result-message').innerHTML = "Buu, You lose!"
+    }
+    if (playerPlays === 'paper' && computerPlays === 'rock') {
+        document.getElementById('result-message').innerHTML = "Yeah, You win!"
+    }
+    if (playerPlays === 'scissors' && computerPlays === 'paper') {
+        document.getElementById('result-message').innerHTML = "Yeah, You win!"
+    }
+    if (playerPlays === 'scissors' && computerPlays === 'rock') {
+        document.getElementById('result-message').innerHTML = "Buu, You lose!"
+    }
+    if (playerPlays === 'paper' && computerPlays === 'rock') {
+        document.getElementById('result-message').innerHTML = "Buu, You lose!"
+    }
+    if (playerPlays === 'rock' && computerPlays === 'scissors') {
+        document.getElementById('result-message').innerHTML = "Yeah, You win!"
+    }
+    else if (playerPlays === computerPlays) {
+        document.getElementById('result-message').innerHTML = "Oh,It's a draw!"
+    }
 
 }
 
-function computersPlay() {
+function computerPlayRandom() {
 
 }
 
