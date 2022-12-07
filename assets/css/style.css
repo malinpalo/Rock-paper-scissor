@@ -10,7 +10,7 @@
 }
 /* Add style to background image */
 body {
-    background: url("../images/background.jpg");
+    background: url("../images/background/background.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,11 +27,54 @@ h2, h3 {
     color: #FFE91F;
     text-align: center;
 }
-
-/* Adds style to result-box where as the result of each round is beeing declared*/
-.result-box {
-    color: #B534D2;
+/*Sets style to Welcome section*/
+.welcome {
+    background: url("../images/background/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.8s ease;
+    opacity: 0;
+    
 }
+.welcome h1 {
+    font-size: 4rem;
+    color: #FFE91F
+
+}
+
+.welcome button {
+    width: 10rem;
+    height: 4rem;
+    background: none;
+    border: none;   
+    color: #FFE91F;
+    font-size: 2rem;
+    background: #B534D2;
+    border-radius: 0.5rem;
+    cursor: pointer;   
+}
+/* Adds style to result-box where as the result of each round is beeing declared*/
+/*Sets style to the players*/
+.game-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.8s;
+}
+/*Sets style to the result message*/
+.winlose{
+    color: #FFE91F;
+    text-align:center;
+    font-size: 3rem;
+}
+
 /* Adds style to buttons */
 #buttons {
     align-items: baseline;
@@ -44,6 +87,9 @@ h2, h3 {
     border: 1rem solid #333234;
     border-radius: 1rem;
     background-color: #FFE91F;
+}
+.button:hover {
+    transform: scale(1.2);
 }
 /* Adds style to scoreboard */
 .scorebox {

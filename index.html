@@ -20,23 +20,30 @@
 
   <!--Game area-->
   <section class="game-area">
+
+    <!--First welcome page with rules and a start play button-->
+    <div class="welcome">
+      <h1>Rock Paper Scissors</h1>
+      <button>Play</button>
+  </div>
+
     <h2>Best out of 5, the clock Is ticking!</h2>
         <h3>Choose a winning hand!</h3>
    
     <!--Box with information of who won or lost each round-->
-    <div class="result-box">
+    <div class="game-play fadeOut">
+      <h2 class="winlose">Choose a weapon!</h2>
         <!--Information about who won and what the computer played, shows after each hand is being played-->
-        <div id="result-message"></div>
+        <div id="results"></div>
         <!--Player and computers hand, shows after each hand is being played-->
-        <div id="roll-player">Player<span id="win">You won!</span></div>
-        <div id="roll-computer">Computer<span id="lost">You lost!</span></div>
+        
       </div>
         
         <!--Buttons that are used to play the game-->
     <div id="buttons">
         <button id="r" class="button" aria-label="Rock" data-type="0"><img src="assets/images/rock.png" alt="A rock made out of a hand"></button>
-        <button id="s" class="button" aria-label="Paper" data-type="1"><img src="assets/images/scissors.png" alt="A scissor made out of a hand"></button>
-        <button id="p" class="button" aria-label="Scissors" data-type="2"><img src="assets/images/paper.png" alt="A paper made out of a hand"></button>
+        <button id="s" class="button" aria-label="Scissors" data-type="1"><img src="assets/images/scissors.png" alt="A scissor made out of a hand"></button>
+        <button id="p" class="button" aria-label="Paper" data-type="2"><img src="assets/images/paper.png" alt="A paper made out of a hand"></button>
     </div>
 
     <!--Game score board-->
@@ -49,15 +56,5 @@
     </div>
   </section>  
 
-    <!--Footer-->
-    <footer>
-        <ul class="Social-media-icons">
-            <li>
-            </li>
-            <li>
-            </li>
-        </ul>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.js"charset="utf-8"></script>
 </body>
